@@ -1,14 +1,20 @@
-.container {
-  color: salmon;
-  align-content: center;
+body {
+  margin: 0.5em;
+  background-color: #f9f9f7;
 }
-
-header {
-  background-color: #7efca0;
-}
-
 article {
-  background-color: #a436f7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat();
+  grid-gap: 1em;
+}
+.appHeader {
+  margin-bottom: 1em;
 }
 
-/* grid - grid-template-columns in the 1fr fr stands for, add grid-gap for adding   */
+@media screen and (max-width: 960px) {
+  article {
+    grid-template-columns: repeat(1, 1fr);
+    white-space: nowrap;
+  }
+}
