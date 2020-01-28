@@ -14,7 +14,7 @@ article {
 }
 
 h1.title {
-  color: darkred;
+  color: #bf1600;
   font-size: 6em;
   text-align: center;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);

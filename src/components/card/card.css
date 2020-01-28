@@ -5,7 +5,7 @@
 .card:hover .cardOverlay {
   display: block;
   box-sizing: initial;
-  animation-duration: 3s;
+  animation-duration: 0.5s;
   animation-name: slidein;
 }
 .cardOverlay {
@@ -38,7 +38,7 @@
     width: 42%;
   }
   .card:hover .cardOverlay {
-    animation-duration: 2s;
+    animation-duration: 0.5s;
   }
 }
 
@@ -47,6 +47,6 @@
     width: 90%;
   }
   .card:hover .cardOverlay {
-    animation-duration: 2s;
+    animation-duration: 0.5s;
   }
 }

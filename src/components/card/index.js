@@ -3,7 +3,7 @@ import "./card.css";
 
 function FilmCard(props) {
   return (
-    <div className="cardOverlay">
+    <div className='cardOverlay'>
       <h3>{props.title}</h3>
       <p>Rating: {props.rating}</p>
     </div>
