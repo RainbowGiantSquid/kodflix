@@ -1,6 +1,7 @@
 import React from "react";
 import FilmCover from "./components/cover";
 import FilmCard from "./components/card";
+import Fruit from "./components/fruits";
 import Img1 from "./img/stalker.jpg";
 import Img2 from "./img/cranes-are-flying.jpg";
 import Img3 from "./img/ashes_and_diamonds.jpg";
@@ -14,7 +15,6 @@ import Img10 from "./img/vive-sa-vie.jpg";
 import Img11 from "./img/un_light.jpg";
 import Img12 from "./img/seventh_seal.jpg";
 import Img13 from "./img/8_half.png";
-
 import "./App.css";
 
 function App() {
@@ -23,6 +23,8 @@ function App() {
       <div className="container">
         <header className="appHeader">
           <div className="card">
+            <h1 className="title">OLDFLIX</h1>
+            <Fruit />
             <FilmCard className="cardOverlay" title="Stalker" rating="5.8" />
             <FilmCover backgroundImg={Img1} />
           </div>
