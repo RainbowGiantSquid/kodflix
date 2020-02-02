@@ -9,4 +9,5 @@ function FilmCard(props) {
     </div>
   );
 }
+
 export default FilmCard;

@@ -3,8 +3,8 @@ import "./cover.css";
 
 function FilmCover(props) {
   return (
-    <div className="coverImg">
-      <img alt="" src={props.backgroundImg} />
+    <div className='coverImg'>
+      <img alt='' src={props.backgroundImg} />
     </div>
   );
 }

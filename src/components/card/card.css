@@ -8,6 +8,7 @@
   animation-duration: 0.5s;
   animation-name: slidein;
 }
+
 .cardOverlay {
   display: none;
   position: absolute;
