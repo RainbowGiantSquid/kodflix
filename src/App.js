@@ -1,25 +1,27 @@
 import React from "react";
-import Film from "./components/film";
-import Fruit from "./components/fruits";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Film from "./components/film/Film";
+import Fruit from "./components/fruits/Fruits";
+import Menu from "./components/menu/Menu";
 import "./App.css";
-import Menu from "./components/menu";
 
 function App() {
   return (
-    <div className='App'>
-      <div className='container'>
-        <header className='appHeader'>
-          {/* <Menu /> */}
-          <div className='card'>
-            <h1 className='title'>OLDFLIX</h1>
-            <Fruit />
-          </div>
-        </header>
-        <article className='container'>
-          <Film />
-        </article>
+    <Router>
+      <div className="App">
+        <div className="container">
+          <header className="appHeader">
+            <Route path="/" component={Menu} />
+            <h1 className="title">OLDFLIX</h1>
+            {/* <Fruit /> */}
+          </header>
+          <article className="container">
+            <Route exact path="/" component={Film} />
+            {/* <Route exact path={filmId} component={Film} /> */}
+          </article>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 export default App;

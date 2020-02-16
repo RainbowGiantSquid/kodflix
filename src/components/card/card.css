@@ -12,6 +12,7 @@
 .cardOverlay {
   display: none;
   position: absolute;
+  white-space: nowrap;
   width: 29%;
   height: 18em;
   color: whitesmoke;
