@@ -1,0 +1,27 @@
+.Menu {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+
+.MenuButton {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .Menu {
+    display: none;
+    flex-direction: row;
+  }
+  .MenuButton {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Menu {
+    flex-direction: column;
+  }
+  .MenuButton {
+    display: block;
+  }
+}
