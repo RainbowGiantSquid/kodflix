@@ -21,6 +21,10 @@ h1.title {
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.current {
+  color: #bf1500;
+}
+
 @media screen and (max-width: 992px) {
   article {
     grid-template-columns: repeat(2, 1fr);

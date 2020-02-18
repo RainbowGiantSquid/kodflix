@@ -4,14 +4,25 @@
   font-size: 1.5em;
 }
 
+.Menu a,
+.Menu a:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: #211d13;
+}
+
+.Menu a:hover {
+  color: #bf1500;
+}
+
 .MenuButton {
   display: none;
 }
 
 @media screen and (max-width: 992px) {
   .Menu {
-    display: none;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
   }
   .MenuButton {
     display: block;

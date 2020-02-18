@@ -14,83 +14,84 @@ import Img9 from "../img/the_mirror.jpg";
 import Img10 from "../img/vive-sa-vie.jpg";
 import Img11 from "../img/un_light.jpg";
 import Img12 from "../img/seventh_seal.jpg";
+import { Link } from "react-router-dom";
 
 const films = [
   {
     title: "Stalker",
-    id: 0,
+    id: "stalker",
     rating: 8.9,
     backgroundImg: Img
   },
   {
     title: "Eight and a half",
-    id: 1,
+    id: "eight-and-half",
     rating: 9.2,
     backgroundImg: Img1
   },
   {
     title: "Cranes are flying",
-    id: 2,
+    id: "cranes-are-flying",
     rating: 7.4,
     backgroundImg: Img2
   },
   {
     title: "Ashes and diamonds",
-    id: 3,
+    id: "ashes-and-diamonds",
     rating: 9.1,
     backgroundImg: Img3
   },
   {
     title: "Innocent sorcerers",
-    id: 4,
+    id: "innocent-sorcerers",
     rating: 7.8,
     backgroundImg: Img4
   },
   {
     title: "Bande a part",
-    id: 5,
+    id: "bande-a-part",
     rating: 8.2,
     backgroundImg: Img5
   },
   {
     title: "Mephisto",
-    id: 6,
+    id: "maphisto",
     rating: 7.8,
     backgroundImg: Img6
   },
   {
     title: "La Dolce Vita",
-    id: 7,
+    id: "la-dolce-vita",
     rating: 6.7,
     backgroundImg: Img7
   },
   {
     title: "One flew over cookoo's nest",
-    id: 8,
+    id: "one-flew-over",
     rating: 9.2,
     backgroundImg: Img8
   },
   {
     title: "The Mirror",
-    id: 9,
+    id: "the-mirror",
     rating: 7.4,
     backgroundImg: Img9
   },
   {
     title: "Vivre sa vie",
-    id: 10,
+    id: "vivre-sa-vie",
     rating: 8.2,
     backgroundImg: Img10
   },
   {
-    title: "Unbearable lighness of being",
-    id: 11,
+    title: "Unbearable lightness of being",
+    id: "unbearable-lightness",
     rating: 7.8,
     backgroundImg: Img11
   },
   {
     title: "The Seventh Seal",
-    id: 12,
+    id: "seventh-seal",
     rating: 8.3,
     backgroundImg: Img12
   }
@@ -100,10 +101,10 @@ export default class Film extends React.Component {
   render() {
     return films.map(film => {
       return (
-        <div className="card" key={film.id}>
+        <Link to={`film/${film.id}`} className="card" key={film.id}>
           <FilmCard title={film.title} rating={film.rating} />
           <FilmCover backgroundImg={film.backgroundImg} />
-        </div>
+        </Link>
       );
     });
   }
