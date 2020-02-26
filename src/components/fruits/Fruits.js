@@ -13,7 +13,9 @@ export default class Fruit extends React.Component {
     return (
       <div>
         <h1>{this.state.isFavourite}</h1>
-        <button onClick={() => this.changeFavourite()}>Change favoutire</button>
+        <button className="buttonChange" onClick={() => this.changeFavourite()}>
+          Change favoutire
+        </button>
       </div>
     );
   }
